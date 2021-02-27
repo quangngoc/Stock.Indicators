@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<indicator>
+  <summary>
+    The Relative Vigor Index (RVI) is a technical analysis indicator that measures the strength of a trend by comparing a security's closing price to its trading range and smoothing the results.
+    It's based on the tendency for prices to close higher than they open in uptrends and to close lower than they open in downtrends.
+    See
+    <see href="https://github.com/quangngoc/Stock.Indicators/tree/master/indicators/Rvi/#content">documentation</see>
+    for more information.
+  </summary>
+  <typeparam name="TQuote">Configurable Quote type.  See Guide for more information.</typeparam>
+  <param name="history">Historical price quotes.</param>
+  <param name="lookbackPeriod">Number of periods for the Oscillator.</param>
+  <returns>Time series of Relative Vigor Index values.</returns>
+  <exception cref="ArgumentOutOfRangeException">Invalid parameter value provided.</exception>
+  <exception cref="BadHistoryException">Insufficient history provided.</exception>
+</indicator>
